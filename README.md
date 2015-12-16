@@ -3,6 +3,12 @@
 Note (by reaper7): latest github versions of Adafruit_SSD1306 + Adafruit_GFX working properly on ESP8266
 and this mod is not needed any more.
 
+Tips for oleds without reset pin (only VCC,GND,SDA,SCL):
+at top of sketch change reset pin value to -1:
+```
+Adafruit_SSD1306 display(-1);   //reset disable
+```
+
 -------------------------------------
 
 SSD1306 display library for the ESP8266 board (modified from Adafruit_SSD1306)
